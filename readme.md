@@ -1,10 +1,11 @@
 # Setup
+1. Copy the [api key from mailchimp](https://mailchimp.com/help/about-api-keys/) as the whole body of [secrets.txt](secrets.txt)
+
+If you're having issues with the app 
 1. Run ` npm list` in the terminal. If it does not print ` markdown-to-mailchimp`, install [Markdown2Mailchimp](https://github.com/MarcL/markdown-to-mailchimp)
 ```bash
 npm install markdown-to-mailchimp
 ```
-2. Find the audience id on [your mailchimp](https://mailchimp.com/help/find-audience-id/) 
-3. Copy the [api key from mailchimp](https://mailchimp.com/help/about-api-keys/) as the whole body of [secrets.txt](secrets.txt)
 
 # How it works 
 The script, [prep_newsletter.sh](prep_newsletter.sh), will take a YAML frontmatter generated from the google sheet and a markdown file with the content of the newsletter and combine them into a single markdown file. This will then be slotted into a MJML template ([template.mjml](template.mjml)) that Markdown2Mailchimp turns into a HTML file and uploads to mailchimp.
