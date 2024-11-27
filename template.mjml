@@ -1,0 +1,291 @@
+<!--from here: https://mjml.io/try-it-live/d5Q1ApIAIQ-->
+
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Helvetica" font-size="16px" color="#222"/>
+<!--      <mj-class name="centered-image" -->
+    </mj-attributes>
+    <mj-preview>{{frontmatter.preview}}</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F4F4F4" color="#55575d" font-family="Arial, sans-serif">
+    <!--    <mj-section background-color="#ffffff" background-repeat="repeat" padding-bottom="0px" padding-top="30px" padding="20px 0" text-align="center" vertical-align="top">-->
+    <!--      <mj-column>-->
+    <!--        <mj-image align="center" padding="10px 25px" src="http://5vph.mj.am/img/5vph/b/1g8pi/0gztq.png" target="_blank" width="214px"></mj-image>-->
+    <!--        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="13px" line-height="22px" padding-bottom="15px" padding-top="0px" padding="10px 25px">-->
+    <!--          <p style="text-align: center; margin: 10px 0;color:#151e23;font-size:14px;font-family:Georgia,Helvetica,Arial,sans-serif">Product | Concept | Contact</p>-->
+    <!--        </mj-text>-->
+    <!--      </mj-column>-->
+    <!--    </mj-section>-->
+    <mj-section background-repeat="repeat" padding-bottom="0px" padding-top="0px" padding="20px 0" text-align="center"
+                vertical-align="top">
+      <mj-column>
+        <!--        header image-->
+        <mj-image align="center" padding-bottom="0px" padding-left="0px" padding-right="0px" padding-top="0px"
+                  padding="10px 25px"
+                  src="https://mcusercontent.com/759d2cb486ebe9ef6e6654e15/images/08a52053-1209-7d4a-60ef-a7ce22d0f4af.png"
+                  target="_blank" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <!--    intro-->
+    <mj-section background-color="#ffffff" background-repeat="repeat" background-size="auto" padding-bottom="0px"
+                padding-top="30px" padding="20px 0" text-align="center" vertical-align="top">
+      <mj-column>
+        <mj-text align="center" color="#55575d" font-family="Arial, sans-serif" font-size="15px" line-height="28px"
+                 padding="0px 25px 0px 25px">
+          {{content}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!--    events header-->
+    <mj-section background-color="#ffffff" background-repeat="repeat" background-size="auto" padding-bottom="0px"
+                padding-top="30px" padding="20px 0" text-align="center" vertical-align="top">
+      <mj-column>
+        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="30px" line-height="22px"
+                 padding-bottom="10px" padding-top="10px" padding="10px 25px">
+          <p
+            style="line-height: 30px; margin: 10px 0; text-align: center; color:#151e23; font-size:30px; font-family:Georgia,Helvetica,Arial,sans-serif;">
+            - Our Events This Month -</p>
+          <p
+            style="font-size: 20px; color: #151e23; font-family: Georgia, Helvetica, Arial, sans-serif; margin-top: 20px; font-style:italic;">
+            What's Happening in Moishe Town</p>
+          <ul
+            style="list-style-type: disc; font-size: 15px; color: #151e23; font-family: Georgia, Helvetica, Arial, sans-serif; margin-left: 30px; margin-top: 10px;">
+            <li><a href="{{frontmatter.event1.facebookEvent}}">{{frontmatter.event1.title}}</a>: {{frontmatter.event1.day}}, <b>{{frontmatter.event1.dateshort}}</b>, {{frontmatter.event1.time}}</li>
+            <li><a href="{{frontmatter.event2.facebookEvent}}">{{frontmatter.event2.title}}</a>: {{frontmatter.event2.day}}, <b>{{frontmatter.event2.dateshort}}</b>, {{frontmatter.event2.time}}</li>
+            <li><a href="{{frontmatter.event3.facebookEvent}}">{{frontmatter.event3.title}}</a>: {{frontmatter.event3.day}}, <b>{{frontmatter.event3.dateshort}}</b>, {{frontmatter.event3.time}}</li>
+            <li><a href="{{frontmatter.event4.facebookEvent}}">{{frontmatter.event4.title}}</a>: {{frontmatter.event4.day}}, <b>{{frontmatter.event4.dateshort}}</b>, {{frontmatter.event4.time}}</li>
+            <li><a href="{{frontmatter.event5.facebookEvent}}">{{frontmatter.event5.title}}</a>: {{frontmatter.event5.day}}, <b>{{frontmatter.event5.dateshort}}</b>, {{frontmatter.event5.time}}</li>
+            <li><a href="{{frontmatter.event6.facebookEvent}}">{{frontmatter.event6.title}}</a>: {{frontmatter.event6.day}}, <b>{{frontmatter.event6.dateshort}}</b>, {{frontmatter.event6.time}}</li>
+            <li><a href="{{frontmatter.event7.facebookEvent}}">{{frontmatter.event7.title}}</a>: {{frontmatter.event7.day}}, <b>{{frontmatter.event7.dateshort}}</b>, {{frontmatter.event7.time}}</li>
+          </ul>
+          <p
+            style="font-size: 15px; color: #151e23; font-family: Georgia, Helvetica, Arial, sans-serif; margin-top: 20px;">
+            See below for the sign-up links</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!--    event 1 and 2-->
+    <mj-section background-color="#ffffff" background-repeat="repeat" padding-bottom="0px" padding="20px 0"
+                text-align="center" vertical-align="top">
+      <mj-column style="width:240px;height: 240px;overflow: hidden;">
+        <mj-image align="center" padding-bottom="20px" padding-left="30px" padding-right="30px" padding-top="0px"
+                  padding="10px 25px" src="{{frontmatter.event1.image_url}}" target="_blank" style="height: 100%;width: 100%;object-fit: cover;"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="13px" line-height="22px"
+                 padding-bottom="0px" padding-left="40px" padding-right="40px" padding-top="0px" padding="10px 25px">
+          <p id="event1" style="margin: 10px 0; color:#151e23; font-size:16px; font-family:Georgia,Helvetica,Arial,sans-serif"><b>{{frontmatter.event1.title}}</b>
+          </p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:12px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event1.dateTimeLocation}}</p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:14px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event1.description}}</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" background-repeat="repeat" direction="rtl" padding-bottom="0px"
+                padding-top="0px" padding="20px 0" text-align="center" vertical-align="center">
+      <mj-column vertical-align="center" style="width:240px;height: 240px;overflow: hidden;">
+        <mj-image align="center" padding-bottom="20px" padding-left="30px" padding-right="30px" padding-top="20px"
+                  padding="10px 25px" src="{{frontmatter.event2.image_url}}" target="_blank" style="height: 100%;width: 100%;object-fit: cover;"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="13px" line-height="22px"
+                 padding-bottom="0px" padding-left="40px" padding-right="40px" padding-top="0px" padding="10px 25px">
+          <p id="event2" style="margin: 10px 0; color:#151e23; font-size:16px; font-family:Georgia,Helvetica,Arial,sans-serif"><b>{{frontmatter.event2.title}}</b>
+          </p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:12px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event2.dateTimeLocation}}</p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:14px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event2.description}}</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <!--    event 3 and 4-->
+    <mj-section background-color="#ffffff" background-repeat="repeat" padding-bottom="0px" padding="20px 0"
+                text-align="center" vertical-align="top">
+      <mj-column style="width:240px;height: 240px;overflow: hidden;">
+        <mj-image align="center" padding-bottom="20px" padding-left="30px" padding-right="30px" padding-top="0px"
+                  padding="10px 25px" src="{{frontmatter.event3.image_url}}" target="_blank" style="height: 100%;width: 100%;object-fit: cover;"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="13px" line-height="22px"
+                 padding-bottom="0px" padding-left="40px" padding-right="40px" padding-top="0px" padding="10px 25px">
+          <p id="event3" style="margin: 10px 0; color:#151e23; font-size:16px; font-family:Georgia,Helvetica,Arial,sans-serif"><b>{{frontmatter.event3.title}}</b>
+          </p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:12px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event3.dateTimeLocation}}</p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:14px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event3.description}}</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" background-repeat="repeat" direction="rtl" padding-bottom="0px"
+                padding-top="0px" padding="20px 0" text-align="center" vertical-align="top">
+      <mj-column style="width:240px;height: 240px;overflow: hidden;">
+        <mj-image align="center" padding-bottom="20px" padding-left="30px" padding-right="30px" padding-top="20px"
+                  padding="10px 25px" src="{{frontmatter.event4.image_url}}" target="_blank" style="height: 100%;width: 100%;object-fit: cover;"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="13px" line-height="22px"
+                 padding-bottom="0px" padding-left="40px" padding-right="40px" padding-top="0px" padding="10px 25px">
+          <p id="event4" style="margin: 10px 0; color:#151e23; font-size:16px; font-family:Georgia,Helvetica,Arial,sans-serif"><b>{{frontmatter.event4.title}}</b>
+          </p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:12px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event4.dateTimeLocation}}</p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:14px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event4.description}}</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <!--    event 5 and 6-->
+    <mj-section background-color="#ffffff" background-repeat="repeat" padding-bottom="0px" padding="20px 0"
+                text-align="center" vertical-align="top">
+      <mj-column style="width:240px;height: 240px;overflow: hidden;">
+        <mj-image align="center" padding-bottom="20px" padding-left="30px" padding-right="30px" padding-top="0px"
+                  padding="10px 25px" src="{{frontmatter.event5.image_url}}" target="_blank" style="height: 100%;width: 100%;object-fit: cover;"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="13px" line-height="22px"
+                 padding-bottom="0px" padding-left="40px" padding-right="40px" padding-top="0px" padding="10px 25px">
+          <p id="event5" style="margin: 10px 0; color:#151e23; font-size:16px; font-family:Georgia,Helvetica,Arial,sans-serif"><b>{{frontmatter.event5.title}}</b>
+          </p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:12px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event5.dateTimeLocation}}</p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:14px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event5.description}}</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" background-repeat="repeat" direction="rtl" padding-bottom="0px"
+                padding-top="0px" padding="20px 0" text-align="center" vertical-align="top">
+      <mj-column style="width:240px;height: 240px;overflow: hidden;">
+        <mj-image align="center" padding-bottom="20px" padding-left="30px" padding-right="30px" padding-top="20px"
+                  padding="10px 25px" src="{{frontmatter.event6.image_url}}" target="_blank" style="height: 100%;width: 100%;object-fit: cover;"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="13px" line-height="22px"
+                 padding-bottom="0px" padding-left="40px" padding-right="40px" padding-top="0px" padding="10px 25px">
+          <p id="event6" style="margin: 10px 0; color:#151e23; font-size:16px; font-family:Georgia,Helvetica,Arial,sans-serif"><b>{{frontmatter.event6.title}}</b>
+          </p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:12px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event6.dateTimeLocation}}</p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:14px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event6.description}}</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <!--    event 7-->
+    <mj-section background-color="#ffffff" background-repeat="repeat" padding-bottom="0px" padding="20px 0"
+                text-align="center" vertical-align="top">
+      <mj-column style="width:240px;height: 240px;overflow: hidden;">
+        <mj-image align="center" padding-bottom="20px" padding-left="30px" padding-right="30px" padding-top="0px"
+                  padding="10px 25px" src="{{frontmatter.event7.image_url}}" target="_blank" style="height: 100%;width: 100%;object-fit: cover;"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text align="left" color="#55575d" font-family="Arial, sans-serif" font-size="13px" line-height="22px"
+                 padding-bottom="0px" padding-left="40px" padding-right="40px" padding-top="0px" padding="10px 25px">
+          <p id="event7" style="margin: 0; color:#151e23; font-size:16px; font-family:Georgia,Helvetica,Arial,sans-serif"><b>{{frontmatter.event7.title}}</b>
+          </p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:12px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event7.dateTimeLocation}}</p>
+          <p
+            style="line-height: 16px; margin: 10px 0;font-size:14px; color:#151e23; font-family:Georgia,Helvetica,Arial,sans-serif; color:#354552">
+            {{frontmatter.event7.description}}</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <!--    <mj-section background-color="#ffffff" background-repeat="repeat" padding-top="0px" padding="20px 0" text-align="center" vertical-align="top">-->
+    <!--      <mj-column>-->
+    <!--        <mj-button align="center" background-color="#354552" border-radius="3px" color="#ffffff" font-family="Georgia, Helvetica, Arial, sans-serif" font-size="14px" font-weight="normal" inner-padding="10px 25px" padding="10px 25px" text-decoration="none" text-transform="none" vertical-align="middle">Discover all desserts</mj-button>-->
+    <!--      </mj-column>-->
+    <!--    </mj-section>-->
+    <!--    outro-->
+    <mj-section background-color="#ffffff" background-repeat="repeat" background-size="auto" padding-bottom="0px"
+                padding-top="30px" padding="20px 0" text-align="center" vertical-align="top">
+      <mj-column>
+        <mj-text align="center" color="#55575d" font-family="Arial, sans-serif" font-size="14px" line-height="28px"
+                 padding="0px 25px 0px 25px">
+          <p>If you made it this far and you are missing a certain type of event, shoot us an email. We would love to
+            work with you to make a more inclusive Jewish community.</p>
+          <p>Best,<br/>
+            MoHo Somerville<br/>
+            Akiva, Alex, Gonen, and Lindsay</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!--    <mj-section background-color="#ffffff" background-repeat="repeat" padding-bottom="0px" padding-top="0px" padding="20px 0" text-align="center" vertical-align="top">-->
+    <!--      <mj-column>-->
+    <!--        <mj-image align="center" padding-bottom="0px" padding-left="0px" padding-right="0px" padding-top="0px" padding="10px 25px" src="http://5vph.mj.am/img/5vph/b/1g8pi/068y3.jpeg" target="_blank" width="600px"></mj-image>-->
+    <!--      </mj-column>-->
+    <!--    </mj-section>-->
+    <mj-section background-color="#ffffff" background-repeat="repeat" padding="20px 0" text-align="center"
+                vertical-align="top">
+      <mj-column>
+        <!--        <mj-image align="center" padding="10px 25px" src="http://5vph.mj.am/img/5vph/b/1g8pi/0gzjm.png" target="_blank" width="202px"></mj-image>-->
+        <mj-social align="center">
+          <mj-social-element name="facebook-noshare"
+                             href="https://www.facebook.com/mohosomerville/events"></mj-social-element>
+          <!--          <mj-social-element name="pinterest"></mj-social-element>-->
+          <!--          <mj-social-element name="instagram"></mj-social-element>-->
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section>
+      <mj-column>
+        <!--          <mj-text font-style="italic" font-size="12px">This email was sent to *|EMAIL|*.</mj-text>-->
+        <!--          <mj-text font-style="italic" font-size="12px">If you would like to stop getting these emails, click <a href="*|UNSUB|*" target="_blank">this link to unsubscribe</a> from this mailing list.</mj-text>-->
+
+        <!--          <mj-text font-style="italic" font-size="12px">Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</mj-text>-->
+        <!--          <mj-text font-size="12px">*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*</mj-text>-->
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-style="italic" font-size="12px">If you got sent this by a friend and want to subscribe, click <a
+          href="*|LIST:SUBSCRIBE|*" target="_blank">this link to subscribe</a> to this mailing list.
+        </mj-text>
+        <mj-text font-style="italic" font-size="12px">This email was sent to *|EMAIL|*.</mj-text>
+        <mj-text font-style="italic" font-size="12px">If you would like to stop getting these emails, click <a
+          href="*|UNSUB|*" target="_blank">this link to unsubscribe</a> from this mailing list.
+        </mj-text>
+
+        <mj-text font-style="italic" font-size="12px">Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights
+          reserved.
+        </mj-text>
+<!--        <mj-text font-size="12px">*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*</mj-text>-->
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
+
